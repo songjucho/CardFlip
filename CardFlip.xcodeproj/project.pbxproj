@@ -13,7 +13,19 @@
 		5CA135DF250C84A900B02F15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA135DD250C84A900B02F15 /* Main.storyboard */; };
 		5CA135E1250C84AA00B02F15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CA135E0250C84AA00B02F15 /* Assets.xcassets */; };
 		5CA135E4250C84AA00B02F15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CA135E2250C84AA00B02F15 /* LaunchScreen.storyboard */; };
+		5CC21034256D578300B59E31 /* CardFlipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC21033256D578300B59E31 /* CardFlipTests.swift */; };
+		5CC2103E256D581800B59E31 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC2103D256D581800B59E31 /* Model.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CC21036256D578300B59E31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CA135CC250C84A900B02F15 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CA135D3250C84A900B02F15;
+			remoteInfo = CardFlip;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5CA135D4250C84A900B02F15 /* CardFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,21 @@
 		5CA135E0250C84AA00B02F15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CA135E3250C84AA00B02F15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CA135E5250C84AA00B02F15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CC21031256D578300B59E31 /* CardFlipTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardFlipTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC21033256D578300B59E31 /* CardFlipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFlipTests.swift; sourceTree = "<group>"; };
+		5CC21035256D578300B59E31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CC2103D256D581800B59E31 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5CA135D1250C84A900B02F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC2102E256D578300B59E31 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				5CA135D6250C84A900B02F15 /* CardFlip */,
+				5CC21032256D578300B59E31 /* CardFlipTests */,
 				5CA135D5250C84A900B02F15 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				5CA135D4250C84A900B02F15 /* CardFlip.app */,
+				5CC21031256D578300B59E31 /* CardFlipTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +88,18 @@
 				5CA135E0250C84AA00B02F15 /* Assets.xcassets */,
 				5CA135E2250C84AA00B02F15 /* LaunchScreen.storyboard */,
 				5CA135E5250C84AA00B02F15 /* Info.plist */,
+				5CC2103D256D581800B59E31 /* Model.swift */,
 			);
 			path = CardFlip;
+			sourceTree = "<group>";
+		};
+		5CC21032256D578300B59E31 /* CardFlipTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CC21033256D578300B59E31 /* CardFlipTests.swift */,
+				5CC21035256D578300B59E31 /* Info.plist */,
+			);
+			path = CardFlipTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,18 +122,40 @@
 			productReference = 5CA135D4250C84A900B02F15 /* CardFlip.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5CC21030256D578300B59E31 /* CardFlipTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CC2103A256D578300B59E31 /* Build configuration list for PBXNativeTarget "CardFlipTests" */;
+			buildPhases = (
+				5CC2102D256D578300B59E31 /* Sources */,
+				5CC2102E256D578300B59E31 /* Frameworks */,
+				5CC2102F256D578300B59E31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CC21037256D578300B59E31 /* PBXTargetDependency */,
+			);
+			name = CardFlipTests;
+			productName = CardFlipTests;
+			productReference = 5CC21031256D578300B59E31 /* CardFlipTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5CA135CC250C84A900B02F15 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1170;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "송주";
 				TargetAttributes = {
 					5CA135D3250C84A900B02F15 = {
 						CreatedOnToolsVersion = 11.7;
+					};
+					5CC21030256D578300B59E31 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 5CA135D3250C84A900B02F15;
 					};
 				};
 			};
@@ -116,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				5CA135D3250C84A900B02F15 /* CardFlip */,
+				5CC21030256D578300B59E31 /* CardFlipTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +189,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CC2102F256D578300B59E31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,10 +206,27 @@
 				5CA135DC250C84A900B02F15 /* ViewController.swift in Sources */,
 				5CA135D8250C84A900B02F15 /* AppDelegate.swift in Sources */,
 				5CA135DA250C84A900B02F15 /* SceneDelegate.swift in Sources */,
+				5CC2103E256D581800B59E31 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CC2102D256D578300B59E31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CC21034256D578300B59E31 /* CardFlipTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CC21037256D578300B59E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CA135D3250C84A900B02F15 /* CardFlip */;
+			targetProxy = 5CC21036256D578300B59E31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5CA135DD250C84A900B02F15 /* Main.storyboard */ = {
@@ -314,6 +396,50 @@
 			};
 			name = Release;
 		};
+		5CC21038256D578300B59E31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
+				INFOPLIST_FILE = CardFlipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.songju.CardFlipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardFlip.app/CardFlip";
+			};
+			name = Debug;
+		};
+		5CC21039256D578300B59E31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B3PWYBKFUK;
+				INFOPLIST_FILE = CardFlipTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.songju.CardFlipTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CardFlip.app/CardFlip";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -331,6 +457,15 @@
 			buildConfigurations = (
 				5CA135E9250C84AA00B02F15 /* Debug */,
 				5CA135EA250C84AA00B02F15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CC2103A256D578300B59E31 /* Build configuration list for PBXNativeTarget "CardFlipTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CC21038256D578300B59E31 /* Debug */,
+				5CC21039256D578300B59E31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
