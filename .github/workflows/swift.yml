@@ -14,6 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Run tests
-      run: 
+      run: |
         pod install --repo-update --clean-install --project-directory=CardFlip/
-        /usr/bin/xcodebuild test -workspace CardFlip.xcworkspace -scheme CardFlipTests -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
+        xcodebuild test -workspace CardFlip.xcworkspace -scheme CardFlipTests -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
