@@ -20,4 +20,4 @@ jobs:
       shell: bash
       
     - name: Run tests
-      run: xcodebuild test -workspace CardFlip.xcworkspace -scheme CardFlipTests -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
+      run: xcodebuild test -workspace CardFlip.xcworkspace -scheme CardFlipTests -destination 'platform=iOS Simulator,name=iPhone 12'
