@@ -13,7 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      
+    - name: Install Dependencies
+      working-directory: ./CardFlip
+      run: pod install
+      shell: bash
+      
     - name: Run tests
-      run: 
-        pod install --repo-update --clean-install --project-directory=thereto-ios/
-        xcodebuild test -workspace thereto-ios/thereto-ios.xcworkspace -scheme thereto-ios -destination 'platform=ios Simulator, name=iPhone 11 Pro,OS=13.6'
+      run: xcodebuild test -workspace CardFlip.xcworkspace -scheme CardFlip -destination 'platform=iOS Simulator,name=iPhone 11'
