@@ -16,4 +16,4 @@ jobs:
     - name: Run tests
       run: 
         pod install --repo-update --clean-install --project-directory=CardFlip/
-        xcodebuild clean test -project CardFlip.xcodeproj -scheme CardFlip -destination "platform=iOS Simulator,name=iPhone 11 Pro"
+        /usr/bin/xcodebuild test -workspace CardFlip.xcworkspace -scheme CardFlipTests -destination 'platform=iOS Simulator,name=iPhone 11 Pro'
