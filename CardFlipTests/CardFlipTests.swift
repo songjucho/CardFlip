@@ -26,6 +26,7 @@ class CardFlipTests: XCTestCase {
     func test_github_actions2()  {
         let model = Model(name: "송주", age: 24)
         XCTAssertEqual(model.name, "송주")
+        XCTAssertEqual(model.age, 24)
     }
 
 }
